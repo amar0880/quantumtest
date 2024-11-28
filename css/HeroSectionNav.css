@@ -1,0 +1,179 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    filter: drop-shadow(2px 4px 6px black);
+    color: white;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #0dfdf0;
+}
+
+.explores{
+  text-decoration: none;
+  color: rgb(30, 27, 27);
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(2, 5, 5, 0.7), rgba(241, 241, 241, 0.4));
+}
+
+
+.scroll-down {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-decoration: none; /* Remove underline */
+  color: #86b7fe; /* Text color */
+  font-size: 1.2em; /* Adjust text size */
+  position: absolute; /* Positioning for overall centering */
+  bottom: 20px; /* Adjust distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center alignment */
+}
+
+.scroll-content {
+  display: inline-flex; /* Ensure text and icon stay aligned */
+  align-items: center; /* Align text and icon vertically */
+}
+
+@keyframes pushRelease {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+}
+
+.scroll-down i {
+  margin-left: 8px; /* Space between text and icon */
+  animation: pushRelease 2s infinite ease-in-out;
+}
+
+
+/* Navbar hover effects */
+.navbar-dark .nav-link:hover {
+  color: #00bfff; /* Change to your preferred highlight color */
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Dropdown animation */
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Adjust for sticky navbar */
+.fixed-top {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Active link styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+
+
+
+
+/* Navbar hover effects */
+.navbar-dark .nav-link:hover {
+  color: #00bfff; /* Highlight color */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Dropdown animation */
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sidebar styling */
+.sidebar {
+  padding: 5px 10px;
+  border-left: 2px solid #0d7d98;
+}
+.sidebar small {
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: .5rem; */
+  /* padding-bottom: .5rem; */
+  background-color: hsl(213.33deg 100% 3.53%);
+  border: 1px solid #090909;
+  box-shadow: 5px 10px 20px 3px #001543;
+}
+
+
+.navbar-brand{
+  padding-bottom: 2px;
+  padding-top:0px;
+}
+
+
+.logoimg{
+  height: 70px;
+  margin-left: 15px;
+}

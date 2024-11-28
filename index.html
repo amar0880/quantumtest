@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quantum Global Networks</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/qggnfavi.gif" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 6 CDN for the latest icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/HeroSectionNav.css" />
+    <link rel="stylesheet" href="css/whatsgmailcha.css" />
+  </head>
+  <body>
+    <!-- ******************************************************************* -->
+    <!-- Floating Contact Widget Start-->
+    <div class="floating-widget">
+      <div class="circle" id="circle">
+        <div class="icon"></div>
+      </div>
+      <div class="contact-links" id="contactLinks">
+        <!-- Email link -->
+        <a
+          href="mailto:info@quantumglobalnetworks.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+          class="contact-item email"
+        >
+          <img src="img/gmail.png" alt="Email" />
+        </a>
+
+        <!-- WhatsApp link -->
+        <a
+          href="https://wa.me/7038923401"
+          target="_blank"
+          class="contact-item whatsapp"
+        >
+          <img src="img/whatsapp.png" alt="WhatsApp" />
+        </a>
+
+        <!-- Call link with FontAwesome icon -->
+        <a href="tel:+1234567890" class="contact-item call">
+          <img src="img/telephone.png" alt="" />
+        </a>
+
+        <!-- Chatbot link -->
+        <a href="#" class="contact-item chatbot" id="chatbotButton">
+          <img src="img/chatbot.png" alt="Chatbot" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        QuantumBot Assistant
+        <button class="close-btn" id="chatbotClose">&times;</button>
+      </div>
+      <div class="chatbot-body" id="chatbotBody">
+        <p><strong>Quanta:</strong> Hello! How can I assist you today?</p>
+        <p>Ask me about our services, contact details, or general inquiries.</p>
+      </div>
+      <div class="chatbot-footer">
+        <input
+          type="text"
+          class="chatbot-input"
+          id="chatbotInput"
+          placeholder="Type your message..."
+        />
+        <button class="chatbot-send" id="chatbotSend">Send</button>
+      </div>
+    </div>
+
+    <!-- Floating Contact Widget End -->
+
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-lg-0">
+          <img
+            src="img/qgnlogo.png"
+            alt="Quantum Global Network"
+            class="logoimg"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto p-3 p-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu border-light">
+                <li>
+                  <a href="it-development.html" class="dropdown-item"
+                    >IT Development</a
+                  >
+                </li>
+                <li>
+                  <a href="digital-marketing.html" class="dropdown-item"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li>
+                  <a href="lead-generation.html" class="dropdown-item"
+                    >Lead Generation</a
+                  >
+                </li>
+                <li><a href="bpo.html" class="dropdown-item">BPO's</a></li>
+                <li>
+                  <a href="import-export.html" class="dropdown-item"
+                    >Import Export</a
+                  >
+                </li>
+                <li>
+                  <a href="e-commerce.html" class="dropdown-item">E-Commerce</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Industries</a
+              >
+              <ul class="dropdown-menu border-light">
+                <li>
+                  <a href="industry-technology.html" class="dropdown-item"
+                    >Technology</a
+                  >
+                </li>
+                <li>
+                  <a href="industry-finance.html" class="dropdown-item"
+                    >Finance</a
+                  >
+                </li>
+                <li>
+                  <a href="industry-healthcare.html" class="dropdown-item"
+                    >Healthcare</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Sidebar -->
+          <div class="sidebar d-none d-lg-flex ms-3 flex-column">
+            <small class="text-white"
+              ><i class="fa fa-envelope me-2"></i
+              >info@quantumglobalnetworks.com</small
+            >
+            <small class="mt-2 text-white"
+              ><i class="fa fa-phone-square me-2"></i>020 66666016</small
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Navbar End -->
+
+    <!-- Hero Section  Start -->
+    <div id="home" class="hero">
+      <div class="container text-center">
+        <h1 class="Quantum-heading">Quantum Global Networks</h1>
+
+        <p>Empowering Your Digital Transformation</p>
+        <button class="btn btn-light" onclick="scrollToSection('#services')">
+          <a href="#services" class="explores">Explore Services</a>
+        </button>
+        <video autoplay muted loop playsinline class="video-bg">
+          <source src="video/bannerqgnnew.webm" type="video/webm" />
+        </video>
+        <a href="#about" class="scroll-down">
+          Scroll Down<i class="fa-solid fa-down-long"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5 about-section position-relative">
+      <div class="container py-5 px-lg-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-title position-relative mb-4 pb-2">
+              <h6 class="position-relative text-gradient ps-4 text-primary">
+                About Us
+              </h6>
+              <h2 class="mt-2 text-light-blue">
+                Driving Innovation & Excellence in IT, Marketing & Beyond
+              </h2>
+            </div>
+            <p class="mb-4" style="color: #055160">
+              At Quantum Global Network, we are a dynamic team committed to
+              transforming businesses through cutting-edge solutions. With
+              expertise in IT development, digital marketing, AI technologies,
+              lead generation, and import-export services, we empower clients to
+              achieve remarkable success. Our decade-long experience and passion
+              for innovation make us the trusted partner for businesses
+              worldwide.
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <h6 class="mb-3" style="color: #4777f5">
+                  <i class="fa fa-check text-primary me-2"></i>Innovative IT
+                  Solutions
+                </h6>
+                <h6 class="mb-0" style="color: #4777f5">
+                  <i class="fa fa-check text-primary me-2"></i>Global Marketing
+                  Expertise
+                </h6>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="mb-3" style="color: #4777f5">
+                  <i class="fa fa-check text-primary me-2"></i>AI-Driven
+                  Strategies
+                </h6>
+                <h6 class="mb-0" style="color: #4777f5">
+                  <i class="fa fa-check text-primary me-2"></i>Import-Export
+                  Excellence
+                </h6>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-4">
+              <a
+                class="btn btn-primary rounded-pill px-4 me-3"
+                href="about.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+            <div class="position-relative">
+              <img
+                class="img-fluid rounded img-animated zoom-effect"
+                src="img/bgai.png"
+                alt="Quantum Global Network"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Newsletter Start -->
+    <div
+      class="container-xxl bg-primary newsletter my-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container px-lg-5">
+        <div class="row align-items-center" style="height: 250px">
+          <div class="col-12 col-md-6">
+            <h3 class="text-white">Ready to get started</h3>
+            <small class="text-white"
+              >Diam elitr est dolore at sanctus nonumy.</small
+            >
+            <div class="position-relative w-100 mt-3">
+              <input
+                class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                type="text"
+                placeholder="Enter Your Email"
+                style="height: 48px"
+              />
+              <button
+                type="button"
+                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+              >
+                <i class="fa fa-paper-plane text-primary fs-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+            <img
+              class="img-fluid mt-5"
+              style="height: 250px"
+              src="img/newsletter.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5 services-section">
+      <div class="container px-lg-5">
+        <div
+          class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <h6 class="position-relative d-inline text-primary ps-4">
+            Our Services
+          </h6>
+          <h2 class="mt-2">How We Can Help Your Business Grow</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- IT Development -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-cogs fa-2x"></i>
+              </div>
+              <h5 class="mb-3">IT Development</h5>
+              <p>
+                We design and develop tailored software solutions that align
+                with your business needs. Whether it’s a web application or
+                enterprise software, we ensure your IT systems are scalable,
+                secure, and optimized for success.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+
+          <!-- Lead Generation -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-users fa-2x"></i>
+              </div>
+              <h5 class="mb-3">Lead Generation</h5>
+              <p>
+                We specialize in generating high-quality leads that align with
+                your business goals. Our strategies focus on delivering relevant
+                & actionable prospects that can help drive conversions & fuel
+                growth.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-bullhorn fa-2x"></i>
+              </div>
+              <h5 class="mb-3">Digital Marketing</h5>
+              <p>
+                We create data-driven marketing strategies that boost your
+                presence and drive results. Our include SEO, content, social
+                campaigns, and more, all designed to enhance your brand
+                visibility and drive conversions.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+
+          <!-- Import/Export Solutions -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-truck fa-2x"></i>
+              </div>
+              <h5 class="mb-3">Import/Export Solutions</h5>
+              <p>
+                Expand your business globally with our efficient import-export
+                services. We manage logistics, customs, and compliance to ensure
+                smooth and timely delivery of your goods across borders, helping
+                you access new markets and grow your reach.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+
+          <!-- BPO Services -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-headset fa-2x"></i>
+              </div>
+              <h5 class="mb-3">BPO Services</h5>
+              <p>
+                Let us handle your back-office functions so you can focus on
+                growing your business. We offer customer support, telemarketing,
+                data entry, and other BPO services that improve your operational
+                efficiency and customer satisfaction.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+
+          <!-- E-Commerce Solutions -->
+          <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+            <div
+              class="service-item d-flex flex-column justify-content-between text-center rounded"
+            >
+              <div class="service-icon flex-shrink-0">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+              </div>
+              <h5 class="mb-3">E-Commerce Solutions</h5>
+              <p>
+                Start or scale your online store with our all-in-one e-commerce
+                solutions. From website development to payment integration and
+                inventory management, we provide everything you need to succeed
+                and grow in the digital marketplace.
+              </p>
+              <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer mt-5 pt-5 wow fadeIn position-relative"
+      data-wow-delay="0.1s"
+    >
+      <!-- Video Background -->
+      <video autoplay muted loop playsinline class="footer-video">
+        <source src="video/footer1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="container px-4 py-5 px-lg-5 position-relative">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4">
+            <h5 class="mb-4" style="color: #00b4d8">Get In Touch</h5>
+            <p class="loc_num_emil">
+              <i class="bi bi-geo-alt me-3" style="color: #0af68c"></i>
+              Pune, IN
+            </p>
+            <p class="loc_num_emil">
+              <i class="bi bi-telephone me-3" style="color: #7f8ff9"> </i>020 -
+              66666016
+            </p>
+            <p class="loc_num_emil">
+              <i class="bi bi-envelope me-3" style="color: #880606"></i
+              >info@quantumglobalnetworks.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-x-twitter" style="color: #00b4d8"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f" style="color: #2505f4"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-instagram" style="color: #8a3ab9"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in" style="color: #0456d1"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-4" style="color: #00b4d8">
+              <i class="fas fa-building me-2"></i>Company
+            </h5>
+            <a class="btn btn-link" href="">
+              <i class="fas fa-chevron-right me-2"></i>About Us</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Contact Us</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Privacy Policy</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Terms & Condition</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Career</a
+            >
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-4" style="color: #00b4d8">
+              <i class="fas fa-cogs me-2"></i>Our Services
+            </h5>
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>IT Development</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Lead Generation</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Digital Marketing</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>BPO's</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>Import Export</a
+            >
+            <a class="btn btn-link" href=""
+              ><i class="fas fa-chevron-right me-2"></i>E-Commerce</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container px-lg-5">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy;
+              <a class="border-bottom" href="index.html"
+                >Quantum Global Networks</a
+              >
+              All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="index.html">Home</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="help.html">Help</a>
+                <a href="fqas.html">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Updated jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Updated Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+
+      // Enable dropdown toggle on mobile
+      document.querySelectorAll(".dropdown-toggle").forEach((dropdown) => {
+        dropdown.addEventListener("click", (e) => {
+          const menu = dropdown.nextElementSibling;
+          menu.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+/********** Template CSS **********/
+:root {
+    --primary: #2124B1;
+    --secondary: #4777F5;
+    --light: #F7FAFF;
+    --dark: #1D1D27;
+}
+
+
+
+/* --------body start--------- */
+body{
+
+margin: 0;
+font-family: 'Arial', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+background: linear-gradient(180deg, #f3f6ff, #e9ecef); 
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+scroll-behavior: smooth;
+
+}
+/* --------body End--------- */
+
+
+
+/*** Heading ***/
+h1,
+h2,
+h3,
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+h4,
+h5,
+h6,
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+
+
+/*** Service Start ***/
+.service-item {
+    position: relative;
+    /* height: 400px; */
+    padding: 30px 25px;
+    background: #f7faff;
+    box-shadow: 0 0 45px rgba(250, 250, 250, 0.08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: #03045e;
+}
+
+.service-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: var(--primary);
+    background: url(../img/icon-shape-white.png);
+}
+
+.service-item h5,
+.service-item p {
+    transition: .5s;
+    
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: var(--light);
+}
+
+.service-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--primary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn {
+    color: var(--primary);
+}
+
+.service-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #00b4d8;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light);
+}
+
+
+.services-section {
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(45deg, #6fcf97, #00bcd4); */
+  background-size: 400% 400%;
+  animation: gradientservicesBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* --------------Services End ------------- */
+
+
+
+
+/***--------------- Footer Start--------------- ***/
+
+.footer {
+    position: relative;
+    color: white; /* Default text color */
+    overflow: hidden;
+  }
+  
+  .footer-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Video stays in the background */
+    filter: brightness(50%) contrast(120%) grayscale(40%);
+
+  }
+  
+  /* Gradient Overlay on Video */
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(68, 15, 180, 0.3)); /* Gradient effect */
+    z-index: 1; /* Overlay sits above the video */
+  }
+  
+  /* Container to ensure content sits above the video and gradient */
+  .footer .container,
+  .footer .copyright {
+    position: relative;
+    z-index: 1;
+  } 
+
+  .footer .col-md-6 .btn-link:hover {
+    color: #e26bfd; /* Darker yellow/orange for hover effect */
+  }
+  
+  /* Social Media Icons */
+
+  .footer .btn.btn-social {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(256, 256, 256, 0.1);
+    border-radius: 40px;
+    transition: 0.3s;
+  }
+
+  .footer .footer-menu a:hover {
+    color: #09fa32; /* Hover color for footer links */
+  }
+  
+  /* Footer Copyright Section */
+  .footer .copyright {
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+  }
+  
+  .footer .copyright a {
+    color: #158ed4; /* Orange color for the copyright link */
+  }
+  
+  .footer .btn.btn-social:hover {
+    color: white;
+    transform: translateY(-5px); /* Adds lift effect on hover */
+    color: var(--primary);
+  }
+   
+  .footer .btn.btn-link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    transition: 0.3s;
+    color: #caf0f8;
+    text-decoration: none;
+  } 
+
+  .footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+  }
+  .footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(249, 248, 248, 0.787);
+  }
+  .footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  } 
+  /* --------Footer End -------------- */
+
+
+
+/* --------About US Start-------------- */
+.about-section {
+    position: relative;
+    overflow: hidden;
+     /* background: linear-gradient(45deg, #6fcf97, #00bcd4); */ 
+    background-size: 400% 400%;
+  }
+
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .img-animated {
+    animation: zoomIn 1s ease-out;
+  }
+  
+/* Zoom In/Out Animation */
+.zoom-effect {
+    animation: zoomInOut 5s ease-in-out infinite;
+  }
+
+  /* Keyframe for zoom in and out effect */
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in */
+    }
+    100% {
+      transform: scale(1); /* Zoom out */
+    }
+  }
+
+/* --------About Us End -------------- */
+
+
+

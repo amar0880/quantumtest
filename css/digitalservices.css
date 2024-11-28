@@ -1,0 +1,289 @@
+.Solutions-boxs {
+    border-radius: 48px 8px;
+    border: 1px solid var(--neutral-n-700, #E2E2E2);
+    background: var(--extremes-white, #FFF);
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    padding: 20px 24px 35px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    transition: all .5s ease-out;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .differ-customer-service {
+        margin-top: 50px;
+    }
+}
+.differ-customer-service {
+    padding: 50px 0;
+    background: url(img\automation-solution-bg.avif);
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+.abrightImg img.img-fluid-sec-2 {
+    border-radius: 10px; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+
+.tools {
+    padding: 50px 0px 0px;
+    background: url(/wp-content/uploads/2023/10/automation-solution-bg.png);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.tools .card {
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 18px 0px rgb(0 0 0 / 11%);
+    height: 100%;
+    text-align: center;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.tool-img{
+    width: 100%;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.howwework-sec {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 50px;
+    }
+
+
+
+.howwework-sec.process-sec .processright .img-homesec img {
+    background: #45187E;
+    padding: 17px;
+    border-radius: 10px;
+    }
+
+
+.howwework-sec h3{
+        color: #19110D;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+
+    .howwework-sec h3,
+        .howwework-sec p {
+        text-align: left;
+        }
+
+
+        
+.howwework-sec ul {
+
+    position: relative;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 0px;
+    
+    }
+
+
+    .howwework-sec ul li {
+        width: 100%;
+        padding: 0px 10px 30px;
+        position: relative;
+        background: #FFF;
+        margin-right: 20px;
+        transition: 0.3s;
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .howwework-sec ul::after {
+            border: 1px dashed #000;
+            content: "";
+            position: absolute;
+            top: 53px;
+            width: 1px;
+            left: 58px;
+            z-index: 0;
+            height: 80%;
+            }
+            howwework-sec ul ul {
+                padding: 0px;
+                margin: 0;
+                }
+                
+                .howwework-sec ul ul::after {
+                display: none;
+                }
+                
+                .howwework-sec ul ul li {
+                width: 100%;
+                padding: 4px;
+                text-align: left;
+                list-style-position: outside;
+                position: relative;
+                padding-left: 19px;
+                font-size: 16px;
+                
+                }
+                
+                .howwework-sec ul ul li i {
+                position: absolute;
+                left: 0px;
+                top: 10px;
+                margin-right: 23px;
+                font-size: 10px;
+                }
+                
+                .processright-sec {
+                padding-left: 25px;
+                width: 86%;
+                }
+                
+                .howwework-sec .img-homesec {
+                display: inline-block;
+                position: relative;
+                z-index: 10;
+                width: 72px;
+                }
+                
+                
+                
+                .howwework-sec ul li:last-child {
+                margin-right: 0px;
+                }
+                
+                
+                .howwework-sec h4 {
+                text-align: left;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0px 0 20px;
+                }
+                
+                .howwework-sec p {
+                font-size: 16px;
+                }
+                
+                .howwework-sec ul li p {
+                padding: 0px 0px;
+                font-size: 16px;
+                text-align: left;
+                font-family: 'Inter', sans-serif !important;
+                }
+
+                .howwework-sec {
+                    height: auto;
+                }
+                
+                .howwework-sec ul li {
+                    height: 100%;
+                }
+
+                
+.howwework-sec ul {
+    padding: 0;
+}
+
+.howwework-sec .container {
+    max-width: 96%;
+}
+
+.howwework-sec ul li p {
+    visibility: initial;
+}
+
+.howwework-sec ul li {
+    height: 100%;
+}
+
+.howwework-sec ul::after {
+    left: 42px;
+}
+
+
+
+
+
+
+
+
+.faq-section-services {
+    padding: 50px 0;
+    }
+
+    .faq-section-services .accordion-item {
+        margin-bottom: 20px;
+        border-radius: 16px;
+        }
+        
+        .faq-section-services .accordion-item:not(:first-of-type) {
+        border-top: 1px solid rgba(0, 0, 0, .125);
+        border-radius: 16px;
+        }
+        
+        
+     .faq-section-services .accordion-button {
+        background: transparent;
+        color: #000;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px;
+        }
+        
+        .faq-section-services .accordion-button:not(.collapsed) {
+        box-shadow: none;
+        
+        }
